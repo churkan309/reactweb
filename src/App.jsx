@@ -1,34 +1,34 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
+    <div className='mt-14 mx-auto max-w-6xl grid grid-cols-[40%_60%]'>
       <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+        <div className='sticky top-0 grid grid-rows-[35%_40%_20%] h-screen'>
+          <div>
+            <div>ChurKan Klaikruea</div>
+            <div>Frontend Engineer</div>
+            <div>I build acessible, pixel perfect digital experiences </div>
+            <div>View Resume</div>
+          </div>
+          <div>Nav</div>
+          <div className='flex items-end'>Link</div>
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+      <div>
+        <div>About</div>
+        <div className='mb-80'>Experience</div>
+        <div className='mb-80'>Experience</div>
+        <div className='mb-80'>Experience</div>
+        <div className='mb-80'>Experience</div>
+        <div className='mb-80'>Experience</div>
+        <div className='mb-80'>Experience</div>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+      
+    </div>
   )
 }
 
